@@ -1,25 +1,17 @@
-def isPrime(num):
+def shiftN(stringvalue, direction, N):
     ##################################################
     # make your code
     ##################################################
-    return 0
+    return stringvalue
 
 
-def primeNumbers(begin, end):
-    ##################################################
-    # make your code
-    ##################################################
-    # isPrime(value)
+str = '001100'
+print(int(str, 2))
+rstr = shiftN(str, 0, 2)
+print(rstr)
+print(int(rstr, 2))
 
-    return plist
-
-
-begin = 0
-end = 20
-rlst = primeNumbers(begin, end)
-print(rlst)
-
-begin = 10
-end = 50
-rlst = primeNumbers(begin, end)
-print(rlst)
+rstr = '110000'
+rstr = shiftN(rstr, 1, 4)
+print(rstr)
+print(int(rstr, 2))
