@@ -1,8 +1,11 @@
 def shiftN(stringvalue, direction, N):
-    ##################################################
-    # make your code
-    ##################################################
-    return stringvalue
+    if not stringvalue:
+        return stringvalue
+    N = N % len(stringvalue)
+    if direction == 0:
+        return stringvalue[N:] + stringvalue[N:]
+    elif direction == 1:
+        return stringvalue[-N:] + stringvalue[:-N]
 
 
 def main():
