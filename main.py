@@ -3,7 +3,7 @@ def shiftN(stringvalue, direction, N):
         return stringvalue
     N = N % len(stringvalue)
     if direction == 0:
-        return stringvalue[N:] + stringvalue[N:]
+        return stringvalue[N:] + stringvalue[:N]
     elif direction == 1:
         return stringvalue[-N:] + stringvalue[:-N]
 
